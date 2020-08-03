@@ -6,7 +6,8 @@ def factorial(x):
         
 def fibonacci(n):
     if n == 1:
+        return 0
+    elif n == 2:
         return 1
-    else:
-        return factorial(n-1) + factorial(n)
-    
+
+    return fibonacci(n-1) + fibonacci(n-2)
